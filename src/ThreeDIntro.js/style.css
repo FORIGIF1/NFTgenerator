@@ -1,0 +1,180 @@
+html,body {
+    height: 100%;
+    color: radial-gradient(#161c24 0%, #021025 100%);
+    overflow: hidden;
+  }
+
+  .eachOne {
+    margin-left: 25px;
+  }
+
+  .imageBackground {
+    position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+  .landingButtons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .landingNavMenu {
+    font-style: normal;
+    z-index: 1;
+    font-weight: "bold";
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+
+  .landingNavMenu:hover {
+    color: rgb(190, 190, 190);
+    animation: glow 2s ease-in-out infinite alternate;
+    cursor: pointer;
+    /* background-color: #2b2b2b98; */
+  }
+
+  .nice{
+    position: absolute;
+    background: transparent;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-size: 2em;
+    border-radius: 5px;
+    top: 70vh;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    transition: .3s;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .nice:hover{
+    background-color: rgba(365,365,365,0.5);
+    cursor: grab/pointer;
+    color: #ffffff;
+    transition: .3s;
+  }
+  
+.title {
+    font-size: 55px;
+    font-style: normal;
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 55px;
+    font-style: normal;
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: 700;
+    font-family: "Montserrat Bold";
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 20px;
+    font-style: normal;
+    grid-column: 1;
+    grid-row: 1;
+    font-weight: 400;
+    font-family: "Montserrat Bold";
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: "center";
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #2d9da9;
+    }
+    to {
+      text-shadow: 0 0 30px #34b3c1, 0 0 10px #4dbbc7;
+    }
+  }
+
+  .glitch {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+      0.025em 0.04em 0 #fffc00;
+    animation: glitch 725ms infinite;
+  }
+
+  .homepageContent {
+    font-family: "Montserrat Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+        -0.04em -0.025em 0 #fffc00;
+    }
+  }  
+  
